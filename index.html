@@ -2,11 +2,170 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Веб-студия Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип веб-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <p class="cart-link">
+          <a href="#">Корзина</a>
+        </p>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="slider">
+        <h2 class="visually-hidden">Промо</h2>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <b class="slider-title">Долго, дорого, скурпулёзно.</b>
+            <p>Математически выверенный дизайн для вашего сайта или приложения.</p>
+            <img class="slider-image" src="http://placehold.it/759x411" width="759" height="411" alt="Слайд 1">
+            <a class="button slider-button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <b class="slider-title">Любим математику как никто другой</b>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <img class="slider-image" src="http://placehold.it/759x411" width="759" height="411" alt="Слайд 2">
+            <a class="button slider-button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <b class="slider-title">Только ночь, только хардкор</b>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <img class="slider-image" src="http://placehold.it/759x411" width="759" height="411" alt="Слайд 3">
+            <a class="button slider-button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-list-item">
+            <img src="http://placehold.it/300x146" width="300" height="146" alt="Веб-сайты">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+          <li class="services-list-item">
+            <img src="http://placehold.it/300x146" width="300" height="146" alt="Мобильные приложения">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+          <li class="services-list-item">
+            <img src="http://placehold.it/300x146" width="300" height="146" alt="Презентации">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
+        <p class="about-us-title">
+          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+        </p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <b>Выполняем заказы на разработку:</b>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <img src="http://placehold.it/360x208" width="360" height="208" alt="Логотип Нёрдс">
+        <b>С 2004 года любим точность во всём:</b>
+        <table class="features-table">
+          <tr class="features-table-row-percents">
+            <td>146%</td>
+            <td>100%</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </section>
+      <section class="partners">
+        <h2 class="visually-hidden">Наши партнеры</h2>
+        <ul class="partners-list">
+          <li class="partners-list-item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="http://placehold.it/170x80" width="170" height="80" alt="Логотп HTML Academy">
+            </a>
+          </li>
+          <li class="partners-list-item">
+            <a href="#">
+              <img src="http://placehold.it/170x80" width="170" height="80" alt="Логотп барбершоп Бородинский">
+            </a>
+          </li>
+          <li class="partners-list-item">
+            <a href="#">
+              <img src="http://placehold.it/170x80" width="170" height="80" alt="Логотп Pink">
+            </a>
+          </li>
+          <li class="partners-list-item">
+            <a href="#">
+              <img src="http://placehold.it/170x80" width="170" height="80" alt="Логотп Mishka">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p>
+          <b>Nёrds Design Studio</b><br>
+          191186, Санкт-Петербург, Большая Конюшенная, д. 19/8<br>
+          тел. +7(812) 275-75-75
+        </p>
+        <a class="button" href="#">Напишите нам</a>
+      <div class="footer-interactive-map">
+        <img class="footer-map-static" src="http://placehold.it/1440x414" width="1440" height="414" alt="Карта проезда к веб-студии Nёrds">
+      </div>
+      </section>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social-links-list">
+          <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-button-inst" href="#">Инстаграм</a></li>
+        </ul>
+        <p class="social-special-offer">
+          <b>Давайте дружить, это выгодно!</b>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </section>
+    </footer>
+    <section class="modal modal-write-us">
+      <h2>Напишите нам</h2>
+      <form class="write-us-form" action="#" method="post">
+        <p>
+          <label class="label-write-us-form-username" for="write-us-form-username" >Ваше имя:</label>
+          <input type="text" id="write-us-form-username" name="write-us-form-username" placeholder="Предствьтесь, пожалуйста">
+          <label class="label-write-us-form-email" for="write-us-form-email">Ваш e-mail:</label>
+          <input type="email" id="write-us-form-email" name="write-us-form-email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label class="label-textarea-write-us-form" for="user-message">Текст письма</label>
+          <textarea id="user-message" name="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button modal-write-us-buton" type="submit" >Отправить</button>
+      </form>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
