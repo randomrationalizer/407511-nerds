@@ -8,12 +8,12 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img  src="http://placehold.it/160x65" width="160" height="65" alt="Логотип веб-студии Нёрдс">
+          <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип веб-студии Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="current-site-navigation"><a href="catalog.html">Магазин</a></li>
+          <li class="current-site-navigation"><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <p class="cart-link">
@@ -22,50 +22,56 @@
       </nav>
     </header>
     <main class="container">
-      <section class="page-title">
-        <h1>Магазин готовых шаблонов</h1>
-      </section>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter-form" action="#" method="get">
-          <fieldset>
-            <legend>Стоимость:</legend>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-fieldset-legend">Стоимость:</legend>
             <input type="range" min="0" max="15000" step="1" name="pricerange">
             <p>
               <span>От</span><input type="text" name="minprice"><span>До<input type="text" name="maxprice"></span>
             </p>
           </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-fieldset-legend">Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-radio" type="radio" name="grid" value="adaptive">Адаптивная
+                <input class="visually-hidden filter-radio" type="radio" id="adaptive-grid" name="grid" value="adaptive">
+                <label for="adaptive-grid">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-radio" type="radio" name="grid" value="fixed">Фиксированная
+                <input class="visually-hidden filter-radio" type="radio" id="fixed-grid" name="grid" value="fixed">
+                <label for="fixed-grid">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-radio" type="radio" name="grid" value="flexible">Резиновая
+                <input class="visually-hidden filter-radio" type="radio" id="flexible-grid" name="grid" value="flexible">
+                <label for="flexible-grid">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-fieldset-legend">Особенности:</legend>
             <ul>
               <li class="filter-option">
-                  <input class="visually-hidden filter-checbox" type="checkbox" name="slider" checked>Слайдер
+                  <input class="visually-hidden filter-checkbox" type="checkbox" id="checkbox-slider" name="slider" checked>
+                  <label for="checkbox-slider">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checbox" type="checkbox" name="features-block">Блок преимуществ
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="checkbox-features-block" name="features-block">
+                <label for="checkbox-features-block">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checbox" type="checkbox" name="news" checked>Новости
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="checkbox-news" name="news" checked>
+                <label for="checkbox-news">Новости</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checbox" type="checkbox" name="gallery">Галерея
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="checkbox-gallery" name="gallery">
+                <label for="checkbox-gallery">Галерея</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checbox" type="checkbox" name="cart">Корзина
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="checkbox-cart" name="cart">
+                <label for="checkbox-cart">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -73,37 +79,18 @@
         </form>
       </section>
       <section class="catalog-sorter">
-        <h2 class="visually-hidden">Сортировка</h2>
-        <fieldset>
-          <legend>Сортировать:</legend>
-          <ul class="sorting-filter">
-            <li class="sorting-filter-option">
-              <input class="visually-hidden filter-radio" type="radio" name="sorting-type" value="by-price">По цене
-            </li>
-            <li class="sopting-filter-option">
-              <input class="visually-hidden filter-radio" type="radio" name="sorting-type" value="by-type">По типу
-            </li>
-            <li class="sopting-filter-option">
-              <input class="visually-hidden filter-radio" type="radio" name="sorting-type" value="by-name">По названию
-            </li>
-          </ul>
-          <ul class="sorting-swither">
-            <li class="sorting-filter-option">
-              <input class="visually-hidden filter-radio" type="radio" name="sorting-switcher" value="decrease"><div></div>
-            </li>
-            <li class="sorting-swither-option">
-              <input class="visually-hidden filter-radio" type="radio" name="sorting-switcher" value="increase"><div></div>
-            </li>
-          </ul>
-        </fieldset>
+        <h2 class="catalog-sorter-title">Сортировать:</h2>
+        <a class="sorting-button sort-by-price" href="#">По цене</a>
+        <a class="sorting-button sort-by-type" href="#">По типу</a>
+        <a class="sorting-button sort-by-name" href="#">По названию</a>
+        <a class="sorting-button sort-by-decrease" href="#" title="По убыванию"></a>
+        <a class="sorting-button sort-by-increase" href="#" title="По возрастанию"></a>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Седона">
-            </p>
+            <img class="catalog-item-image" src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Седона">
             <div class="catalog-item-hover">
               <h3>
                 <a href="catalog-item.html">Седона</a>
@@ -113,9 +100,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Pink App">
-            </p>
+            <img class="catalog-item-image" src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Pink App">
             <div class="catalog-item-hover">
               <h3>
                 <a href="catalog-item.html">Pink App</a>
@@ -125,9 +110,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Barbershop">
-            </p>
+            <img class="catalog-item-image" src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Barbershop">
             <div class="catalog-item-hover">
               <h3>
                 <a href="catalog-item.html">Barbershop</a>
@@ -137,9 +120,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Mishka">
-            </p>
+            <img class="catalog-item-image" src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Mishka">
             <div class="catalog-item-hover">
               <h3>
                 <a href="catalog-item.html">Mishka</a>
@@ -149,9 +130,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта A Plus">
-            </p>
+            <img class="catalog-item-image" src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта A Plus">
             <div class="catalog-item-hover">
               <h3>
                 <a href="catalog-item.html">A Plus</a>
@@ -161,9 +140,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <p class="catalog-item-image">
-                <img src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Кваст">
-            </p>
+            <img class="catalog-item-image" src="http://placehold.it/540x528" width="528" height="540" alt="Шаблон сайта Кваст">
             <div class="catalog-item-hover">
               <h3>
                 <a href="catalog-item.html">Кваст</a>
@@ -203,11 +180,11 @@
         </div>
       </section>
       <section class="footer-social">
-        <h2 class="visually-visually-hidden">Мы в соцсетях</h2>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-links-list">
-          <li><a class="social-button-vk" href="#">Вконтакте</a></li>
-          <li><a class="social-button-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-button-inst" href="#">Инстаграм</a></li>
+          <li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
         </ul>
         <p class="social-special-offer">
           <b>Давайте дружить, это выгодно!</b>
@@ -230,7 +207,7 @@
         </p>
         <button class="button modal-write-us-buton" type="submit" >Отправить</button>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close">x</button>
     </section>
   </body>
 </html>
