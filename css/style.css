@@ -1,21 +1,367 @@
 body {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-  font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136; 
+
+  background-color: #ffffff;
 }
 
-.slider-title {
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation a {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.current-site-navigation a {
+  border-bottom: 2px solid #fb565a;
+}
+
+.current-site-navigation a:hover {
+  color: #000000;
+}
+
+.main-header-logo img:hover,
+.main-header-logo img:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+
+.button {
+  font: inherit;
+  line-height: 18px;
+  font-weight: 500px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: 0;
+  border-radius: 1px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slider-title,
+.page-title {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-  font-weight: medium;
+  font-weight: 500;
+}
+
+.filter-fieldset {
+  border: none;
+}
+
+.filter-form ul {
+  line-height: 20px;
+}
+
+.filter-fieldset-legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.range-output-input output,
+input[type="range"] {
+  background-color: #eeeeee;
+}
+
+.range-output-input label {
+  text-transform: uppercase;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.filter-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+
+.sorting-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.sorting-button:hover,
+.sorting-button:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-button:active,
+.active-sorting {
+  color: rgba(0, 0, 0, 1);
 }
 
 .services-list-item h3 {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
-  font-weight: bold;
-}   
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #00aa62;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5a722;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+}
+
+.catalog-item-hover {
+  display: none;
+
+  background-color: #eeeeee;
+}
+
+.catalog-item-title a {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-item-hover p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.catalog-item:hover .catalog-item-hover {
+  display: inline-block;
+}
+
+.about-us-title b {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.about-features-lesser-title b {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features-table td {
+  line-height: 18px;
+}
+
+.features-table-row-percents td {
+  font-size: 45px;
+  line-height: 10.6px;
+  color: #000000;
+  font-weight: 700;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  color: #eeeeee;
+  opacity: 0.2;
+}
+
+.partners-list-item {
+  opacity: 0.3;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 1px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+.contacts-information {
+  background-color: #ffffff;
+}
+
+.contacts-information p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts-information b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.social-special-offer {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.social-special-offer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.modal-write-us {
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-write-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+  font: inherit;
+  color: rgba(68, 68, 68, 0.5);
+  font-weight: 400;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+  border-radius: 1px;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  color: rgba(68, 68, 68, 0.5);
+  border-color: #b4b9bb;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+  color: rgba(68, 68, 68, 1);
+  border-color: #000000;
+}
+
+.write-us-form input:invalid,
+.write-us-form textarea:invalid {
+  color: #e74246;
+  border-color: #e74246;
+}
+
+.modal-write-us-buton {
+  font-weight: 400;
+}
+
