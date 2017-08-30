@@ -1,0 +1,115 @@
+
+.main-header {
+	outline: 3px solid #094eac;
+}
+
+.main-navigation {
+	outline: 3px solid #008b8b;
+}
+
+.main-header-logo {
+	outline: 3px solid #7514f6;
+}
+
+.site-navigation {
+	outline: 3px solid #7514f6;
+}
+
+.cart {
+	outline: 3px solid #7514f6;
+}
+
+.slider {
+	outline: 3px solid #ee3135;
+}
+
+.slider-item {
+	outline: 3px solid #fb421d;
+}
+
+
+.services {
+	outline: 3px solid #fb421d;
+}
+
+.services-list-item {
+	outline: 3px solid #094eac;
+}
+
+.index-columns {
+	outline: 3px solid #fb421d;
+}
+
+.inner-page-columns {
+	outline: 3px solid #fb421d;
+}
+
+.about-us {
+	outline: 3px solid #094eac;
+}
+
+.features {
+	outline: 3px solid #094eac;
+}
+
+.partners {
+	outline: 3px solid #fb421d;
+}
+
+.partners-list-item {
+	outline: 3px solid #094eac;
+}
+ 
+.filter {
+	outline: 3px solid #094eac;
+} 
+
+.catalog {
+	outline: 3px solid #094eac;
+} 
+
+.catalog-sorter {
+	outline: 3px solid #008b8b;
+}
+
+.catalog-list {
+	outline: 3px solid #7fff00;
+}
+
+.pagination-list {
+	outline: 3px solid #dfa01e;
+}
+
+.main-footer {
+	outline: 3px solid #fb421d;
+}
+
+.footer-contacts {
+	outline: 3px solid #094eac;
+} 
+
+.contacts-information {
+	outline: 3px solid #7fff00;
+} 
+
+.footer-interactive-map {
+	outline: 3px solid #7fff00;
+} 
+
+.map-marker {
+	outline: 3px solid #008b8b;
+}
+
+.footer-social {
+	outline: 3px solid #008b8b;
+}
+
+.social-links-list {
+	outline: 3px solid #7fff00;
+}
+
+.social-special-offer {
+	outline: 3px solid #7fff00;
+}
+
+

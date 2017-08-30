@@ -21,6 +21,10 @@ ul {
   list-style: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .main-header {
   padding-top: 50px;
 
@@ -42,22 +46,25 @@ ul {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 
   width: 1160px;
-  min-height: 65px;
+  padding: 0 20px;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 600px;
+  margin-right: 245px;
+  width: 440px;
 }
 
 .cart {
   margin: 0;
   padding: 0;
-  width: 160px;
+  width: 115px;
 
   text-align: right;
 }
@@ -105,11 +112,27 @@ ul {
 .slider {
   width: 1160px;
   margin-bottom: 80px;
+  padding: 0 20px;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
+}
+
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+  display: none;
+}
+
+.slider-item {
+  display: flex;
+
+}
+
+.slide-description {
+  width: 380px;
+  margin-right: 55px;
 }
 
 .button {
@@ -145,6 +168,10 @@ ul {
   line-height: 55px;
   color: #000000;
   font-weight: 500;
+}
+
+.slider-title {
+  padding-top: 75px;
 }
 
 .index-columns {
@@ -269,11 +296,12 @@ input[type="range"] {
 
 .services {
   margin-bottom: 80px;
+  padding-left: 20px;
 }
 
 .services-list {
   display: flex;
-  justify-content: space-between;
+
   margin: 0;
   padding: 0;
 }
@@ -281,6 +309,11 @@ input[type="range"] {
 .services-list-item {
   width: 300px;
   text-align: left;
+  margin-right: 100px;
+}
+
+.services-list-item:last-child {
+  margin-right: 0;
 }
 
 .services-list-item h3 {
@@ -403,6 +436,7 @@ hr {
 .partners-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -462,7 +496,7 @@ hr {
   padding: 0;
 }
 
-.footer-contacts {
+.contacts-information {
   width: 319px;
   height: 308px;
 }
@@ -481,6 +515,11 @@ hr {
   justify-content: center;
 }
 
+.map-marker {
+  width: 231px;
+  height: 190px;
+}
+
 .contacts-information b {
   font-size: 18px;
   line-height: 30px;
@@ -493,7 +532,7 @@ hr {
   margin-top: 80px;
 }
 
-.footer-social .container {
+.footer-social-container {
   display: flex;
 }
 

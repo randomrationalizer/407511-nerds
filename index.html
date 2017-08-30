@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -30,10 +31,13 @@
         <h2 class="visually-hidden">Промо</h2>
         <ul class="slider-list">
           <li class="slider-item">
-            <h3 class="slider-title">Долго, дорого, скурпулёзно.</h3>
+          <div class="slide-description">
+            <h3 class="slider-title">Долго, дорого, скрупулёзно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или приложения.</p>
-            <img class="slider-image" src="img/slide1.png" width="698" height="413" alt="Слайд 1">
             <a class="button slider-button" href="#">Узнать больше</a>
+            </div>
+            <img class="slider-image" src="img/slide1.png" width="698" height="413" alt="Слайд 1">
+            
           </li>
           <li class="slider-item">
             <h3 class="slider-title">Любим математику как никто другой</h3>
@@ -115,7 +119,6 @@
       <hr>
       <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
-        <div class="container">
           <ul class="partners-list">
             <li class="partners-list-item">
               <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -138,7 +141,6 @@
               </a>
             </li>
           </ul>
-        </div>
       </section>
       <hr>
     </main>
@@ -163,7 +165,7 @@
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
-          <div class="container">
+          <div class="footer-social-container">
             <ul class="social-links-list">
               <li><a class="button social-button social-button-vk" href="#">Вконтакте</a></li>
               <li><a class="button social-button social-button-fb" href="#">Фейсбук</a></li>
