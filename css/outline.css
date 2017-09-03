@@ -27,6 +27,9 @@
 	outline: 3px solid #fb421d;
 }
 
+.slide-description {
+	outline: 3px solid #ee3135;
+}
 
 .services {
 	outline: 3px solid #fb421d;
@@ -44,7 +47,16 @@
 	outline: 3px solid #fb421d;
 }
 
+.range-wrap {
+	outline: 3px solid #fb421d;
+}
+
+
 .about-us {
+	outline: 3px solid #094eac;
+}
+
+.about-us-services-list li {
 	outline: 3px solid #094eac;
 }
 
