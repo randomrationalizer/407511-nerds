@@ -843,6 +843,7 @@ li.hide-slide {
 
 .pagination-list {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 580px;
@@ -877,7 +878,7 @@ li.hide-slide {
   background-color: #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item:not(.pagination-item-current) a:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d5d5d5;
