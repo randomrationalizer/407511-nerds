@@ -12,6 +12,10 @@ html, body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 a {
   text-decoration: none;
@@ -46,14 +50,14 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header .page-title {
-  padding-top: 77px;
-  padding-bottom: 105px;
+  padding-top: 78px;
+  padding-bottom: 108px;
 
   text-align: center;
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -62,8 +66,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  width: 1160px;
-  padding: 0 20px;
+  width: 100%;
 }
 
 .site-navigation {
@@ -152,9 +155,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  width: 1160px;
   margin-bottom: 80px;
-  padding: 0 20px;
 }
 
 .slider-list {
@@ -491,21 +492,19 @@ li.hide-slide {
   position: relative;
 
   margin-bottom: 80px;
-  padding-left: 20px;
 }
 
 .services::after {
   content: "";
   position: absolute;
-  bottom: -80px;
-  left: 20px;
+  bottom: -83px;
+  left: 0;
 
   width: 1160px;
   height: 2px;
 
   background-image: linear-gradient(#eeeeee 100%, #eeeeee 100%);
 }
-
 
 .services-list {
   display: flex;
@@ -665,15 +664,13 @@ li.hide-slide {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
   padding-top: 40px;
 }
 
 .inner-page-columns {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 62px;
+  margin-top: 58px;
 }
 
 .about-us {
@@ -776,11 +773,10 @@ li.hide-slide {
   position: relative;
 }
 
-.partners::before {
+.partners::before,
+.partners::after {
   content: "";
   position: absolute;
-  top: -50px;
-  left: 20px;
 
   width: 1160px;
   height: 2px;
@@ -788,20 +784,19 @@ li.hide-slide {
   background-image: linear-gradient(#eeeeee 100%, #eeeeee 100%);
 }
 
+.partners::before{
+  top: -50px;
+  left: 0;
+}
+
 .partners::after {
-  content: "";
-  position: absolute;
   bottom: -35px;
-  left: 20px;
-
-  width: 1160px;
-  height: 2px;
-
-  background-image: linear-gradient(#eeeeee 100%, #eeeeee 100%);
+  left: 0;
 }
 
 .partners-list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   margin: 0;
@@ -814,13 +809,13 @@ li.hide-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 260px;
 }
 
 .partners-list-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: -20px;
 
   width: 2px;
   height: 52px;
@@ -897,13 +892,10 @@ li.hide-slide {
 .main-footer {
   margin-bottom: 70px;
   padding: 0;
-}
-
-.main-footer .container {
   padding-top: 70px;
 }
 
-.inner-page-footer .container {
+.inner-page-footer {
   padding-top: 60px;
 }
 
@@ -914,10 +906,10 @@ li.hide-slide {
 .contacts-information {
   position: absolute;
   top: 54px;
-  left: 20px;
+  left: 180px;
   z-index: 1;
 
-  max-width: 219px;
+  width: 219px;
   height: 208px;
   padding: 50px;
   
@@ -949,7 +941,7 @@ p.contacts-information-title {
 .map-marker {
   position: absolute;
   top: 89px;
-  right: 269px;
+  right: 430px;
   
   width: 231px;
   height: 190px;
@@ -979,7 +971,6 @@ p.contacts-information-title {
   padding: 0;
   width: 260px;
   margin-right: 120px;
-  margin-left: 20px;
 }
 
 .social-button {
@@ -1002,7 +993,7 @@ p.contacts-information-title {
 .social-special-offer {
   margin: 0;
   padding: 0;
-  padding-left: 21px;
+  padding-left: 20px;
   width: 545px;
   margin-right: auto;
 
