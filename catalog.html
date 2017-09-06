@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов - веб-студия Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
@@ -67,7 +67,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-fieldset">
+            <fieldset class="filter-fieldset features">
               <legend class="filter-fieldset-legend">Особенности:</legend>
               <ul>
                 <li class="filter-option">
@@ -104,8 +104,8 @@
             <a class="sorting-button sort-by-name" href="#">По названию</a>
             </div>
             <div class="wrapper-arrows">
-            <a class="sorting-button sort-by-decrease" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="сортировать по убыванию"></a>
-            <a class="sorting-button sort-by-increase" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="сортировать по возрастанию"></a>
+            <a class="sorting-button sort-by-decrease" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировать по убыванию"></a>
+            <a class="sorting-button sort-by-increase" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировать по возрастанию"></a>
             </div>
           </section>
           <ul class="catalog-list">
@@ -214,12 +214,12 @@
               <b>Nёrds Design Studio</b>
             </p>
             <p>
-              191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
             <br>
             <br>
               тел. +7(812) 275-75-75
             </p>
-            <button type="button" class="button">Напишите нам</button>
+            <a class="button" href="writeus.html">Напишите нам</a>
           </div>
         </div>
           <div class="footer-interactive-map">
@@ -260,14 +260,16 @@
     <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="#" method="post">
-        <p>
-          <label class="write-us-form-username" for="client-name">Ваше имя:</label>
-          <input id="client-name" type="text" name="name" placeholder="Предствьтесь, пожалуйста">
-        </p>
-        <p>
-          <label class="write-us-form-email" for="client-email">Ваш e-mail:</label>
-          <input id="client-email" type="email" name="email" placeholder="Для отправки ответа">
-        </p>
+        <div class="form-wrapper">
+          <p>
+            <label class="write-us-form-username" for="client-name">Ваше имя:</label>
+            <input id="client-name" type="text" name="name" placeholder="Предствьтесь, пожалуйста">
+          </p>
+          <p>
+            <label class="write-us-form-email" for="client-email">Ваш e-mail:</label>
+            <input id="client-email" type="email" name="email" placeholder="Для отправки ответа">
+          </p>
+        </div>
         <p>
           <label class="write-us-form-message" for="client-message">Текст письма</label>
           <textarea id="client-message" name="message" placeholder="В свободной форме"></textarea>
