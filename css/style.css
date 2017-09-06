@@ -930,15 +930,18 @@ p.contacts-information-title {
 
 .footer-interactive-map {
   position: relative;
-  display: flex;
   margin: 0 auto;
-  width: 1440px;
+  width: 1200px;
   height: 416px;
+
+  background-image: url("../img/footer-map.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .map-marker {
   position: absolute;
-  right: 388px;
+  right: 268px;
   bottom: 137px;
   z-index: 2;
   
