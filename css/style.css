@@ -331,12 +331,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .catalog-sorter-title {
   margin: 0;
-  margin-top: 3px;
+  margin-top: 5px;
   margin-right: 265px;
 
   font-size: 18px;
@@ -356,6 +356,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   width: 280px;
   margin-right: 40px;
+  
 }
 
 .catalog-sorter .wrapper-arrows {
@@ -369,6 +370,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-button {
+  padding-top: 5px;
+
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -397,16 +400,18 @@ input[type="radio"].visually-hidden {
 
 .filter-form ul {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+  margin-bottom: 2px;
   padding-left: 35px;
 
-  line-height: 38px;
+  line-height: 40px;
   list-style: none;
 }
 
 .filter-fieldset-legend {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
+  padding: 0;
 
   font-size: 18px;
   line-height: 30px;
@@ -422,8 +427,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   height: 80px;
-  margin-top: 30px;
-  margin-bottom: 18px;
+  margin-top: 43px;
+  margin-bottom: 20px;
   padding: 0 20px;
   overflow: hidden;
 
@@ -577,7 +582,7 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 3px;
 
   color: #000000;
   
@@ -709,7 +714,7 @@ input[type="radio"].visually-hidden {
           align-items: stretch;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   list-style: none;
 }
@@ -718,8 +723,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 360px;
-  padding-top: 38px;
-  margin-bottom: 30px;
+  padding-top: 40px;
+  margin-bottom: 27px;
 }
 
 .catalog-item svg {
@@ -814,7 +819,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 58px;
+  margin-top: 55px;
 }
 
 .about-us {
@@ -1106,6 +1111,11 @@ input[type="radio"].visually-hidden {
   width: 219px;
   min-height: 208px;
   padding: 50px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
   
   background-color: #ffffff;
 }
@@ -1120,7 +1130,7 @@ input[type="radio"].visually-hidden {
 }
 
 p.contacts-information-title {
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 
 .contacts-information .button {
