@@ -224,7 +224,7 @@ input[type="radio"].visually-hidden {
 
 .slide {
   width: 100%;
-  height: 100%;
+  min-height: 431px;
 }
 
 .slide-text {
@@ -598,13 +598,13 @@ input[type="radio"].visually-hidden {
 .services {
   position: relative;
 
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .services::after {
   content: "";
   position: absolute;
-  bottom: -83px;
+  bottom: -53px;
   left: 0;
 
   width: 1160px;
@@ -623,6 +623,11 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -632,11 +637,12 @@ input[type="radio"].visually-hidden {
 .services-list-item {
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 30px;
 
   text-align: left;
 }
 
-.services-list-item:last-child {
+.services-list-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -658,6 +664,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list-item p {
+  width: 260px;
   margin: 0;
   padding-bottom: 32px;
 }
