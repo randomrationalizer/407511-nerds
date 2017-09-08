@@ -168,9 +168,7 @@
           </div>
         </div>
           <div class="footer-interactive-map">
-            <div class="map-marker">
-              <img src="img/map-marker.png" width="231" height="190" alt="Указатель Нёрдс на карте">
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123745!2d30.320894615783022!3d59.93879686904831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504817722360" width="1200" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </section>
       <div class="container">
@@ -208,7 +206,7 @@
         <div class="form-wrapper">
           <p>
             <label class="write-us-form-username" for="client-name">Ваше имя:</label>
-            <input id="client-name" type="text" name="name" placeholder="Предствьтесь, пожалуйста">
+            <input id="client-name" type="text" name="client-name" placeholder="Предствьтесь, пожалуйста">
           </p>
           <p>
             <label class="write-us-form-email" for="client-email">Ваш e-mail:</label>
@@ -219,9 +217,11 @@
           <label class="write-us-form-message" for="client-message">Текст письма</label>
           <textarea id="client-message" name="message" placeholder="В свободной форме" rows="5"></textarea>
         </p>
-        <button class="button modal-write-us-button" type="submit">Отправить</button>
+        <button class="button modal-write-us-buton" type="submit" >Отправить</button>
       </form>
       <button class="modal-close">Закрыть</button>
     </section>
+
+    <script src="js/popup.js"></script>
   </body>
 </html>
